@@ -1,0 +1,21 @@
+chunks:
+
+-
+    title: "Welcome to the read alignment course"
+    id: welcome
+    rules:
+    -
+        weight: 100
+
+    -
+        weight: 0
+
+    content: |
+
+        # NGS Read Alignment
+
+        -   Perform the simple NGS data alignment task against reference data.
+        -   Learn about the SAM/BAM formats for further manipulation.
+        -   Be able to sort and index BAM format for visualisation purposes.
+
+        <i class="fab fa-creative-commons"></i> / BPA-CSIRO
