@@ -12,14 +12,14 @@ that you want the output to be stored in the file specified by the `-o`
 option:
 
 ```bash
-$ samtools view -bSo SM_Blood.bam SM_Blood.sam
+alignment$ samtools view -bSo SM_Blood.bam SM_Blood.sam
 ```
 
 Compute summary stats for the Flag values associated with the alignments
 using:
 
 ```bash
-$ samtools flagstat SM_Blood.bam
+alignment$ samtools flagstat SM_Blood.bam
 ```
 
 
@@ -36,19 +36,19 @@ of a BAM file you need to make sure that the file is sorted according to
 chromosomal coordinates.
 
 Sort alignments according to chromosomal position and store the result
-in the file with the prefix `Blood.sorted`:
+in the file with the name `SM_Blood.sorted.bam`:
 
 ```bash
-$ samtools sort SM_Blood.bam SM_Blood.sorted
+alignment$ samtools sort SM_Blood.bam -o SM_Blood.sorted.bam
 ```
 
 Index the sorted file.
 
 ```bash
-$ samtools index SM_Blood.sorted.bam
+alignment$ samtools index SM_Blood.sorted.bam
 ```
 
-The indexing will create a file called `Blood.sorted.bam.bai`. Note that
+The indexing will create a file called `SM_Blood.sorted.bam.bai`. Note that
 you don’t have to specify the name of the index file when running
 `samtools index`, it simply appends a `.bai` suffix to the input BAM
 file.
