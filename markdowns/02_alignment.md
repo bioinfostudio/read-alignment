@@ -56,9 +56,6 @@ Now that the genome is indexed we can move on to the actual alignment.
 The first argument for `bwa` is the basename of the index for the genome
 to be searched; in our case this is `human_g1k_v37.fasta`.
 
-Align the reads from Blood samples using the following command:
-You DO NOT need to run this command. This has already been run for you.
-
      bwa mem -M -t 1 -R "@RG\tSM:Blood\tID:ERR059356\tLB:lb\tPL:ILLUMINA" bwa_index/human_g1k_v37.fasta SM_Blood_ID_ERR059356.subset_R1.fastq.gz SM_Blood_ID_ERR059356.subset_R2.fastq.gz > SM_Blood.sam
 
 

@@ -50,7 +50,7 @@ groups:
     -
         type: InlineMultiQuestion
         id: chromosome
-        cid: sam
+        cid: sam-format
         value: 5
         title: SAM format 
         prompt: |
