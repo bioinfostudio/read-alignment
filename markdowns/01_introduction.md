@@ -9,9 +9,8 @@ demonstrated. These are important and essential steps for downstream
 processing of the aligned BAM files.
 
 This data is the whole genome sequencing of a lung adenocarcinoma
-patient AK55. It was downloaded from `ERP001071` (a link is provided in
-the data source section). Only the HiSeq2000 data for `Blood` and
-`liverMets` were analysed.
+patient AK55. It was downloaded from `ERP001071`. Only the HiSeq2000 data
+for `Blood` and `liverMets` were analysed.
 
 Accession numbers associated with read data assigned by the European
 Bioinformatics Institute (EBI) start with ’ER’. e.g. ERP is the study ID
