@@ -22,7 +22,7 @@ The header line starts with the letter ‘@’, i.e.:
 ```
 @SQ     SN:GL000192.1   LN:547496
 @RG     SM:Blood        ID:ERR059356.subset     LB:lb   PL:ILLUMINA
-@PG     ID:bwa  PN:bwa  VN:0.7.15-r1140 CL:bwa mem -M -t 4 -R @RG\tSM:Blood\tID:ERR059356.subset\tLB:lb\tPL:ILLUMINA bwaIndex/human_g1k_v37.fasta input/SM_Blood_ID_ERR059356.subset_R1.fastq.gz input/SM_Blood_ID_ERR059356.subset_R2.fastq.gz
+@PG     ID:bwa  PN:bwa  VN:0.7.15-r1140 CL:bwa mem -M -t 4 -R @RG\tSM:Blood\tID:ERR059356.subset\tLB:lb\tPL:ILLUMINA bwa_index/human_g1k_v37.fasta SM_Blood_ID_ERR059356.subset_R1.fastq.gz SM_Blood_ID_ERR059356.subset_R2.fastq.gz
 ```
 
 While, the actual alignments start with read id, i.e.:
