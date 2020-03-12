@@ -1,6 +1,6 @@
 # Introduction
 
-The goal of this hands-on session is to perform an NGS alignment on the
+The goal of this course is to perform an NGS alignment on the
 sequencing data coming from a tumour and normal group of samples. We
 will align raw sequencing data to the human genome using the BWA aligner
 and then we will discuss the sequence alignment and mapping format
@@ -24,7 +24,8 @@ We have used 4 Blood samples (8 PE `.fastq.gz` files) and 5 Liver
 samples (10 PE `.fastq.gz` files) data from this study to perform the
 whole genome alignment using the BWA aligner. The whole process took
 \>150K CPU seconds per sample and the precomputed alignment will be used
-in different sections of this workshop.
+in different sections.
+
 
 ## Prepare the Environment
 
