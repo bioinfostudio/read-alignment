@@ -1,12 +1,12 @@
 title: "NGS Read Alignment"
 description: |
 
-    # NGS Read Alignment 
+    # NGS Read Alignment
 
 rules:
     start:
     -
-        if_has_role: [student, ta, instructor]
+        if_has_role: [unenrolled, student, ta, instructor]
         if_has_fewer_sessions_than: 4
         may_start_new_session: True
         may_list_existing_sessions: True
@@ -19,7 +19,7 @@ rules:
     -
         permissions: [view, submit_answer, end_session, see_correctness, see_answer_after_submission]
 
-    grade_identifier: alignment 
+    grade_identifier: alignment
     grade_aggregation_strategy: use_latest
 
     grading:
@@ -41,9 +41,9 @@ groups:
             {% include "markdowns/01_introduction.md" %}
     -
         type: TerminalQuestion
-        id: bwa 
-        cid: sam-format 
-        title: Alignment 
+        id: bwa
+        cid: sam-format
+        title: Alignment
         prompt: |
 
             {% include "markdowns/02_alignment.md" %}
@@ -52,7 +52,7 @@ groups:
         id: chromosome
         cid: sam-format
         value: 5
-        title: SAM format 
+        title: SAM format
         prompt: |
 
             {% include "markdowns/03_sam_format.md" %}
@@ -96,4 +96,4 @@ groups:
                 required: True
                 hint: samtools --help
                 correct_answer:
-                - <plain> view 
+                - <plain> view
