@@ -37,16 +37,9 @@ subdirectory. To view if they files have been successfully created type:
 
 We have used the following arguments for the indexing of the genome.
 
--p
-:   = Prefix of the output database [same as db filename]
-
--a
-:   = Algorithm for constructing BWT index. This method works with the
-    whole human genome.
-
-ref genome filename
-:   = the last argument is the name of the reference genome file in the
-    fasta format
+    > **-p**: Prefix of the output database [same as db filename]
+    > **-a**: Algorithm for constructing BWT index. This method works with the whole human genome.
+    > **ref genome filename**: the last argument is the name of the reference genome file in the fasta format
 
 ```bash
 $ ls -l bwa_index
@@ -64,15 +57,7 @@ the file `SM_Blood.sam`.
 
 We have used the following arguments for the alignment of the reads.
 
-mem
-:   = fast mode of high quality input such the Illumina
-
--M
-:   = flags extra hits as secondary. This is needed for compatibility
-    with other tools downstream.
-
--t
-:   = Number of threads.
-
--R
-:   = Complete read group header line.
+    > **mem**: fast mode of high quality input such the Illumina
+    > **-M**: Flags extra hits as secondary. This is needed for compatibility with other tools downstream.
+    > **-t**: Number of threads.
+    > **-R**: Complete read group header line.
