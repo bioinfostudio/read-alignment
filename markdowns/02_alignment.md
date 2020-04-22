@@ -28,7 +28,7 @@ complete command to index the human genome version hg19 is given below.
 
 You DO NOT need to run this command. This has already been run for you.
 
-      bwa index -p bwa_index/human_g1k_v37 -a bwtsw bwa_index/human_g1k_v37.fasta
+    bwa index -p bwa_index/human_g1k_v37 -a bwtsw bwa_index/human_g1k_v37.fasta
       
 
 This command will output 6 files that constitute the index. These files
@@ -42,14 +42,14 @@ We have used the following arguments for the indexing of the genome:
   >  **ref genome filename**: the last argument is the name of the reference genome file in the fasta format  
 
 ```bash
-$ ls -l bwa_index
+ls -l bwa_index
 ```
 
 Now that the genome is indexed we can move on to the actual alignment.
 The first argument for `bwa` is the basename of the index for the genome
 to be searched; in our case this is `human_g1k_v37.fasta`.
 
-     bwa mem -M -t 1 -R "@RG\tSM:Blood\tID:ERR059356\tLB:lb\tPL:ILLUMINA" bwa_index/human_g1k_v37.fasta SM_Blood_ID_ERR059356.subset_R1.fastq.gz SM_Blood_ID_ERR059356.subset_R2.fastq.gz > SM_Blood.sam
+    bwa mem -M -t 1 -R "@RG\tSM:Blood\tID:ERR059356\tLB:lb\tPL:ILLUMINA" bwa_index/human_g1k_v37.fasta SM_Blood_ID_ERR059356.subset_R1.fastq.gz SM_Blood_ID_ERR059356.subset_R2.fastq.gz > SM_Blood.sam
 
 
 The above command outputs the alignment in SAM format and stores them in
